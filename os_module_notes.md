@@ -1,5 +1,5 @@
-#Notes for python os module
-#Functions
+# Notes for python os module
+# Functions
 - os.getcwd()
 - os.mkdir(new_dir)
 - os.chdir(new_dir)
@@ -12,18 +12,18 @@
 - os.path.commonpath(paths) returns the longest common subpath of each path name in the sequence path
 - os.path.getmtime(file) returns a timestamp of when the file was last modified
 
-##Using datetime module and os module to read in a file time stamp
+## Using datetime module and os module to read in a file time stamp
 
 `file_timestamp = os.getmtime(filename)
 python_dt_object = datetime.datetime.fromtimestamp(file_timestamp)`
 
 
-##Moving files in python
+## Moving files in python
 
 os.rename(path,new_path)
 
 
-##Iterating over a directory to check for sub directories
+## Iterating over a directory to check for sub directories
 
 `dir = 'current_directory'
 for name in os.listdir(dir):
