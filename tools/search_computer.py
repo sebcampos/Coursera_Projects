@@ -3,6 +3,10 @@
 import os
 import sys
 
+
+
+#function that takes 1 to 2 arguements and performs a search in the computers file tree for the given arguements
+
 def search_computer(filename, root="/"):
     matches = 0
     for root, dirs, files in os.walk(root, topdown=False):
@@ -19,7 +23,7 @@ def search_computer(filename, root="/"):
                 matches+=1
     
     if matches > 0:
-        return "\n\nComplete"
+        return f"\n\nTotal Matches: {matches}"
     return "File Not Found"
     
 try:
