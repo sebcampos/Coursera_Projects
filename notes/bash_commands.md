@@ -29,7 +29,7 @@
 - `man` shows the manual page of the given command like help function
 
 - `uptime` shows how long the computer has been running
-- `free` shows the amount of unused memory on the current system 
+- `free` shows the amount of unused memory on the current system only on unix
 
 
 
@@ -89,11 +89,18 @@ done;
 
 ## Looping with Bash
 
+### While loop
 ```
 n=1
 while [ $n -le 5 ]; do
 	echo "Iteration number $n"
 	((n+=1))
+done
+```
+### For loop
+```
+for fruit in peach orange apple; do
+    echo "I like $fruit!"
 done
 ```
 
@@ -114,3 +121,8 @@ new_var = $1
 kill <PID>
 ```
   
+```
+tail /var/log/system.log | cut -d' ' -f5-
+```
+the above command will split the output handed to it by the specified delimiter, in this case a space ' ' the -f5- returns the 5th object in the split and everything after that
+
