@@ -21,6 +21,26 @@
 
 - `git merge --abort` will abort the merge in progress 
 
+- `git remote show origin` will show information about our git remote branch
+
+- `git branch -r` will view remote branches currently being tracked
+
+- `git pull` fetches remote updates and merges
+
+- `git fetch` fetches remote updates but does NOT merge, used to review the changes in the remote
+
+- `git remote` lists remote repos
+
+- `git remote -v` lists remote repos verbosely
+
+- `git remote show <name>` describes a single remote repo
+
+- `git remote update` fetches the most up-to-date objects
+
+- `git rebase <new_base_branch>` will make the given branch the new base  
+
+
+
 ## Merging
 
 The git merge command takes the independant snapshots from one branch and "tangles" it with the second one
