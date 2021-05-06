@@ -3,6 +3,7 @@ import os
 import shutil
 import sys
 import socket
+import psutil
 
 def check_reboot():
 	'''Returns True if the computer has a pending reboot.'''
@@ -32,11 +33,17 @@ def check_no_network():
 	except:
 		return True
 
+def check_cpu_usage():
+	'''Returns True if the cpu is hacing too much usage, False otherwise.'''
+	return psutil.cpu_percent(1) > 75
+
+
 def main():
 	checks = [
 		(check_reboot, "Pending Reboot"),
 		(check_root_full, "Root partition full"),
-		(check_no_network, "No working network")
+		(check_no_network, "No working network"),
+		(check_cpu_usage, "Cpu Usage ERROR")
 	]
 	everything_ok = True
 	for check, msg in checks:
@@ -47,6 +54,6 @@ def main():
 		sys.exit(1)
 	
 	elif everything_ok == True:
-		print("All checks Passed")
+		print("All checks Passed:\nReboot check\nRoot Disk Check\nNetwork Check\nCPU usage Check")
 
 main()
