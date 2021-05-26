@@ -26,4 +26,9 @@ Then we partition the list / data structure again in the middle of this higher r
 
 ## Bisecting
 
-- Bisecting files is similar to binary search in the sense that we partition our issue and test our partitions in an attempt to find the faulty partition. 
+- Bisecting files is similar to binary search in the sense that we partition our issue and test our partitions in an attempt to find the faulty partition.
+
+
+## Commands
+
+- `ab -n 500 https://google.com/` will send 500 requests to the website and summarize the results when it is done. This is great for checking if a site is functioning 

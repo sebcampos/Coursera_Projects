@@ -32,6 +32,12 @@
 - `free` shows the amount of unused memory on the current system only on unix
 
 
+## Brew
+
+- `>` will redirect the STDOUT
+- the three file descriptors associated with sending the output in unix are STDIN STDOUT and STDERR
+- When dealing with brew doctor we will use STDERR or `brew doctor 2> brewErrors.txt` or we can use both STDERR and STDOUT with `brew doctor &> brewErrors.txt`
+
 
 ## Pipes and Pipelines
 -  ```
