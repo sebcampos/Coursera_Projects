@@ -25,9 +25,20 @@
 ## When you cant fix the problem
 Work around the problem while avoiding the crash
 
-- A watchdog is a process that chekcs whether a program is running and, when it is not, starts the program again. we can implemint this by having a script running in the backround continuoulsy checking to see if the specified program is running
+- A watchdog is a process that checks whether a program is running and, when it is not, starts the program again. we can implemint this by having a script running in the backround continuoulsy checking to see if the specified program is running
 
 - another workaround would be to start that program in its own virtual enviornment this method of workaround is called a container
+
+
+
+## Communication and documentation During incidents
+- documenting and assigning positions with clear communication will help more than one person work on a problem without fear of overlap and incompatibility
+
+## Writing Effective Postmortems
+- Document what happend, why it happend, how it was diagnosed, and how it was fixed
+- Portmortems are very helpful with large incednets but are good practice on small incidnets
+- Include a summary that highlights the root cause
+- 
 
 
 ## Notes
