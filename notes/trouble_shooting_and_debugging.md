@@ -20,3 +20,18 @@
 
 - running asynchronous events can be done with the asyncio module
 
+- to find the root cause of a crashing application well want to look at all available logs, figure out what changed, trace the system or library calls the program makes, and create the smalled possible reproduction case
+
+## When you cant fix the problem
+Work around the problem while avoiding the crash
+
+- A watchdog is a process that chekcs whether a program is running and, when it is not, starts the program again. we can implemint this by having a script running in the backround continuoulsy checking to see if the specified program is running
+
+- another workaround would be to start that program in its own virtual enviornment this method of workaround is called a container
+
+
+## Notes
+on Linux or MacOS the worst kind of crash is called a kernel panic. On Windowss it is known as the Blue screen of death.
+
+
+
