@@ -61,3 +61,39 @@ Required Python libraries:
 - urllib
 - wmi **might have issues
 
+## MITRE PRE-ATTACK
+Reconnaissance 
+The first stage of PRE-ATTACK focuses on gathering target information from a variety of different sources
+- active scanning
+- Gather victim Host information
+- Gather victim Identity information
+- Gather Victim network information
+- Gather Victim Org Information
+- Phishing for information
+- Search Closed Sources
+- Search open Technical databases
+- Search Open websites/domains
+- Search Victim-Owned websites
+
+Resource Development
+The second stage of PRE ATTACK involves the attacker developing or acquiring the tools needed to perform their attack
+- Acquire Infrastructure
+- Compromise Accounts
+- Compromise Infrastructure
+- Develop Capabilities
+- Establish Accounts
+- Obtain Capabilities
+
+## Introduction to network scanning
+Network scanning
+- identification of potential target systems
+- discovery of vulnerable applications
+- Port scanning
+- Banner collection
+- Vulnerability scanning
+
+## Introduction to scapy
+- Scapy is a python module designed for working with network traffic
+
+
+
