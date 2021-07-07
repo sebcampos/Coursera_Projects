@@ -28,7 +28,7 @@ PyInstaller.__main__.run(
         #clean up everything before doing so
         "--clean",
         #specify to only output any errors
-        "--log-level-ERROR",
+        #"--log-level-ERROR",
         #output name of file
         "--name-"+exename,
         #icon associated with file
