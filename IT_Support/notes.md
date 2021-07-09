@@ -38,3 +38,6 @@
     - These wires are much more expensive and fragile than copper wires
 
 ## Hubs and Switches
+Hubs are slower and more antiquated
+Switches will inspect data and decide where to send it (which application, domain, etc) so that there are no collisions
+
