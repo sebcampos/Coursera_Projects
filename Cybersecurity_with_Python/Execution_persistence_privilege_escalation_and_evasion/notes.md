@@ -143,7 +143,7 @@ see autorun.py + create_USB.py
 
 see script LogonScript.py
 
-### Project injection
+### Process injection
 * Many application are reliant on third-party code:
     - DLLs
     - Libraries
@@ -152,3 +152,86 @@ see script LogonScript.py
 * These dependencies can be used for privilege escalation
     - Replace a legitimate dependency with a malicious version
     - Higher-privilege process loads and runs the malicious library
+
+
+## Python for Defense Evasion
+### Defense evasion
+* Cybersecurity is a cat-and-mouse game between attackers and defenders
+    - Attackers create new methods for attacking a system
+    - Defenders develop tools to detect, block and remediate these attacks
+
+* Defense evasion entails an attacker working to bypass or overcome a ayatems defenses
+    - Obfuscation
+    - Concealment
+    - Targeting defensive tools
+
+
+* Defenses can be evaded in a number of ways
+    - Abuse Elevation control mehcanism
+    - Access Token Manipulation
+    - BITS Jobs
+    - De-obfuscate/Decode file or information
+    - Direct Volume Access
+    - Execution Guardrails
+    - Exploitation for defense evasion
+    - File and directory Permissions modification
+    - Group Policy modification
+    - Hide artifacts
+    - Hijack execution flow
+    - Impair defenses
+    - Indicator Removal on Host
+    - Indirect command execution
+    - Masquerading
+    - Modify Authentication process
+    - Modify Cloud Compute Infrastructure
+    - Modify Registry
+    - Modify System Image
+    - Network Boundary Bridging
+    - Obfuscated Files of Information
+    - Pre-OS boot
+    - Porcess injection
+    - Rouge Domain Controller
+    - Rootkit
+    - Signed Binary Proxy Execution
+    - Signed Script Proxy Execution
+    - Subvert Trust Controls
+    - Template Injection
+    - Traffic Signaling
+    - Trust Developer Utilities Proxy Execution
+    - Unused/Unsupported Cloud Regions
+    - Us alternate Authentication Materials
+    - Valid Accounts
+    - Virtualization/Sandbox Evasion
+    - Weaken Envryption
+    - XSL Script Processing
+
+
+* This course demonstrates two wways for python scripts to be used for defense evasion:
+    - Impair defenses: impair Anti virus software or Avs
+    - Hide artifacts: alternate data streams
+
+
+
+### Introduction to Impair Defenses
+* Some malware and attackers take an aggressive approach to evading defenses
+    - Identify and terminate security tools
+    - Turn off monitoring on infected systems
+* This approach can be risky but effective
+    - Turning off defenses may alert the target to the attackers presence
+    - Disabling protections and logging blinds the defender
+
+see impairAvs.py
+
+
+### Introduction to Hide artifacts
+* A number of different things can reveal an attackers presence on the system:
+    - Configuration Files
+    - Malware executables
+    - User accounts
+
+* Concealing these artifacts makes the attacker harder to detect
+    - More difficult but not impossible
+
+
+### Alternate data streams
+see alternate dataStreams.py
