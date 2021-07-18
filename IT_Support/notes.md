@@ -75,3 +75,70 @@ Unicast, multicast, Broadcast
 
 
 ## Network Layer
+### IP Addresses
+- IP addresses are 32 bit long numbers made up of four octets
+- 8 bits of data or a single octed can represent al decimal numbers from 0 to 255
+- IP adresses belong to the network and are assigned by the current network
+- Dynamic host configuration protocol is when an IP address is automatically assigned via dynamic IP on modern devices
+
+### IP datagrams and encapsulation
+- a packet is also called a datagram , contains a header and a payload
+- first fielt is 4 bits containing the version
+- second field is 20 bytes containing the header length
+- third is service type field, 8 bites that can be used to specify details about quality of service of QoS technologies, this helps computers determine which packets are most important
+- fourth field is the total length field. indicates the length of the entire packet
+- fifth field is the identification field a 16-bit number thats used to group messages together
+- is the total amount of data that needs to be sent is larger than what we can fit in a single datagram (packet), the IP layer needs to slit this data up into many individual packets
+- sixth field is the Time to Live (TTL) field an 8-bit field that indicates how many router hops a datagram can traverse before its thrown away - every time  a datagram encounters a new router this field decrements by one, once it hits 0 the router will not forward it anymore
+- seventh field 8 bit is the protocol field that contains data bout what transport layer protocol is being used
+- eigth field is the header checksum field, a checksum of the contents of the entire IP datagram header
+- nineth field is the source IP address (32bits) 
+- tenth field is the destination IP address (32bits)
+- eleventh layer is the IP otptions field An optional field and is used to set special characteristics for datagrams primarily used for testing purposes
+- twelve layer is the padding field a series of zeros used to ensure the header is correct total size
+
+### IP Address Classes
+9.100.100.100
+octet = 9. or .100 (anything seperated by .)
+network ID = 9
+host ID = 100.100.100
+- The address class system is a way of defining how th global IP address space is split up
+- Three primary types of class adress:
+    * Class A has the first octet used for the network ID and the last three are used for the host ID - 8 bits
+    * Class B First two octets are used for the network ID and the second 2 are used for the host ID - 16 bits
+    * Class C First three octets are used for the network ID and only the final octet is used for the host ID - 24 bits
+
+### Address Resolution Protocol
+ARP
+- ARP is a protocol used to discover the hardware address of a node with a certain IP address
+- ARP table is a list of IP addresses and the MAC addresses associated with them
+
+### Subnetting
+- The Process of taking a large network and splitting it up into many individual and smaller subnetwors or subnets
+- incorrect subnetting setups are a common problem you might run into as an IT support specialist, so its important to have a strong understanding of how this works
+
+### Subnet masks
+A single 8 bit numver can represent 256 different numbers 0-255
+each part of an IP address is an octet meaning it consists of eight bits, for IP adress:
+`9.100.100.100`
+we can see the bits represented in the binary representation of these numbers
+`0001001.01100100.01100100`
+subnet mask in binary
+`11111111.11111111.11111111.00000000`
+the begining of the subnet mask, the mask itself, tells us what we can ignore while computing a host ID the parts with the 0s tells us what to keep
+
+a common mask used is the 
+`255.255.255.0`
+ 
+
+- some bits that would normally comprise of the host ID are actually used for the subnet ID
+-  Subnet masks are 32 bit numbers that are normally written out as four octets in decimal
+
+### Basic Binary Math
+- base 2 is another work for binary
+- 8 bit number is 2 ** 8 or 256 which means and eight bit number can represent 256 decimal numbers
+- a subnet mask is a way for a computer to use and operators to determine if an IP address exists on the same network
+
+### CIDR
+- Classless inter-domain routing 
+- Demarcation point is used to describe where on network or system ends and another one begins  
