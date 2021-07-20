@@ -77,7 +77,7 @@ Unicast, multicast, Broadcast
 ## Network Layer
 ### IP Addresses
 - IP addresses are 32 bit long numbers made up of four octets
-- 8 bits of data or a single octed can represent al decimal numbers from 0 to 255
+- 8 bits of data or a single octed can represent all decimal numbers from 0 to 255
 - IP adresses belong to the network and are assigned by the current network
 - Dynamic host configuration protocol is when an IP address is automatically assigned via dynamic IP on modern devices
 
@@ -142,3 +142,32 @@ a common mask used is the
 ### CIDR
 - Classless inter-domain routing 
 - Demarcation point is used to describe where on network or system ends and another one begins  
+
+
+### Routing
+- A router is a network device that forwards traffic depending on the destination address of that traffic
+- a router recieves a data packet on one of its interfaces, it then examines the destination IP, then looks up the destination network in a routing table, the router then forwards that out to the destination
+
+### Routing Tables
+- columns:
+    1. destination network
+    2. Next Hop
+    3. Total Hops 
+    4. Interface
+
+### Interior gateway protocol
+Routing protocols fall into two main categories: interior gateway protocols and exterior gateway protocols
+- Interior gateway protocols are further split into two catagories: Link state routing protocols and distance-vector protocols
+- Interior gateway protocols are used by routers to shar information within a single autonomour system
+- An autonomous system is a collection of networks that all fall under the control of a single network operator
+- The two main types of interior gateway protocols are link state routing protocols and distance-vector protocols
+
+### Exterior gateway protocols
+communicate data to routers representing the edges of an autonomous system
+- Internet Assigned Numbers Authority (IANA) is a nonprofit organization that helps manage things like IP address allocation
+- Along with managing IP address allocation the IANA is also responsible for ASN or Autonomous System Number allocation
+
+### Non-Routable Address space
+They are ranges of IPs set aside for use by anyone that cannot be routed to
+- Core routers cannot access them
+- They can be used by anyone internally
