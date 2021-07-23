@@ -95,3 +95,117 @@ see networksniffing.py
 
 
 ## Introduction to account discovery
+* User accounts are abaluable resource for an attacker:
+    - privelege escalation
+    - lateral movement
+    - persistence
+
+* Account discovery helps an attacker to identify potentially usefull accounts:
+    - High-privilege accounts are valuable targets
+    - Other accounts may be easy to compromise
+
+## Introduction to File and directory Discovery
+* Files and adta on a system are central to a number of different types of common attacks
+    - data breach
+    - ransomware 
+    - Credential theft
+
+* File and directory discovery helps to identify high-value data
+    - Personally identifiable information (PII)
+    - Critical data
+    - Authentication information
+
+# Python for Lateral Movement
+## MITRE ATTACK Lateral Movement
+* An attacker can gain access to an organizations network and system in a variety of different ways
+    - Phishing emails
+    - Web Applications
+    - Supply chain compromise
+    - And more
+
+* However these methods rarley place the attacker wherer they need to be to achieve their objectives
+    - Compromised systems are usually internet-facing
+    - High-value systems are more protected
+    - Lateral Movement is required
+
+
+
+* An attacker can move laterally through an organizations network via a number of different methods
+    - Exploitation if remote services
+    - Internal Spearphishing
+    - Lateral Tool Transfer
+    - Remote Service Session Hijacking
+    - Remote Services
+    - Replication Through Removable Media
+    - Softwar Deployment Tools
+    - Taint Shared Content
+    - Use Alternate Authentication Material
+
+## Introduction to Use alternative Authentication material
+* Users commonly authenticate to sercives using usernames and passwords, ssh keys, etc
+    - This is not the only way to authenticate
+
+* Constnantly Entering in usernames and passwords on a system is annoying and inefficent
+    - systems will save authentication state to make the system easier to use
+    - Attackers can exploit this saved state to expand their access on an organizations network
+
+
+# Python for Collection
+## Collection
+* Data is essential to a variety of cyber sttacks and attack objectives
+    - Data Breaches
+    - Lateral Movesment
+    - Privilege escalation
+
+* Once attackers have access to a system, they need to collect any data abailable there 
+    - Exfiltrate data for breach
+    - Use collected data to inform next steps
+
+## MITRE ATTACK Collection
+* Attackers can leverage a number of different sources to collect data bout a system and its users:
+    - Archive collected data
+    - Audio Capture
+    - Automated Collection
+    - Clipboard Data
+    - Data from Cloud Storage Object
+    - Data from configuration Repository
+    - Data from Information Repositories
+    - Data from local System
+    - Data from Network Shared Drive
+    - Data from Removeable Media
+    - Data Staged
+    - Email Collection
+    - Input Capture
+    - Man-in-the-Browser
+    - Man-in-the-middle
+    - Screen Capture
+    - Video Capture
+
+
+## Python for collection
+- clipboard data
+- Email collection
+
+## Introduction to clipboard data
+* The system clipboard is a useful tool for transferring data
+    - Copy data in one application
+    - Past the data in another
+
+* Many of the applications on a system require access to the system clipboard:
+    - Any application can be sued for copy/paste
+    - All require read/write clipboard access
+
+* An attacker can take advantage of this universal clipboard acess:
+    - Read sensitive data from the clipboard
+    - Modigy the data stored on the clipboard
+
+## Introduction to email collection
+* Emails can be a rich source of data for an attacker:
+    - Personally Identifiable Information (PII)
+    - Intellectual Property
+    - Data about employee relationships
+
+* This data may be stored in multiple different locations accessible to an attacker:
+    - Web-based email inboxes
+    - local email caches
+
