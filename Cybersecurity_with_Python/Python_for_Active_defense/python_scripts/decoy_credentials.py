@@ -23,7 +23,7 @@ async def start_server():
         process_factory = handle_client
     )
 
-loop = syncio.get_event_loop():
+loop = asyncio.get_event_loop():
 
 try:
     loop.run_untill_complete(start_server)
