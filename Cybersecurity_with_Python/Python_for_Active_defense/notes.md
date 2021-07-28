@@ -39,3 +39,59 @@
     - Treacking an attackers access
     - Causing an attacker to steal fake data
     - wasting an attackers time with invalid credentials
+
+
+# Network
+## Active defense on a network
+* The network is a valuable resource for attackers and defenders alike
+    - Most cyberattacks occur over the network
+    - Network traffic is an easily accessible source of data
+
+* Using the network for data analysis and building decoys supports active defense
+    - Data collection and active response are essential to active defense
+    - Analysis of network-level data provides intelligence on attacker TTPs
+
+## Network-level active defense
+* This course explores the use of Python for three forms of network-level active defense:
+    - PCAP collection
+    - Protocol decoding
+    - Burn-in
+
+## PCAP collection for active defense
+* PCAP collection supports active defense in a few different ways:
+    - Collection of network traffic from a compromised system
+    - Detection of traffic abnormalities signaling data obfuscation
+    - Analysis of C2 and data exfiltration traffic
+
+## Protocol Decoding
+* Malware authors commonly encode or encrypt their C2 traffic to make it more difficult for defenders to analyze. Implementing automated protocol decoding can be applied to active defense use cases:
+    - Malware reverse engineering can produce C2 traffic decoders
+    - Decoding and decryption of network traffic enables C2 traffic analysis
+
+
+## Burn-in
+* A key part of deception is making the decoy look plausible and desirable. Burn-in can be applied to active defense in a few ways:
+    - Creation and use of a decoy account to create legitimate-looking system artifacts
+    - Use of a set of decoy sites to create cookies for adversaries to harvest and use
+    - Perform web browsing to set up a fake browsing history for a decoy user
+
+# Monitoring
+## Introduction to monitoring
+* Monitoring is essental to active defense
+    - Active defense requires identified threats
+    - Monitoring provides the data for threat identification
+
+* Monitoring Also supports other actice defense efforts
+    - Enables defenders to track the efficacy of deception, etc.
+
+* This course explores three applicatoins of monitoring for active defense:
+    1. Network monitoring
+    2. System activity monitoring
+    3. Behavioral analytics
+
+## Network monitoring for active defense
+* Many cyberattacks occur over the network. Network monitoring can be applied to several network defense use cases:
+    - Identification of malicious traffic
+    - Detection of unusual traffic encapsulation (RDP over TCP, etc)
+    - Monitoring for anomalous traffic patterns
+

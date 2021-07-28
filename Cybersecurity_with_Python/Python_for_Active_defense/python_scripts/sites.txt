@@ -1,0 +1,3 @@
+https://pythonprogramming.net/asyncio-basics-intermediate-python-tutorial/
+http://ajaxsoundstudio.com/pyodoc/examples/09-callbacks/03-delayed-calls.html
+https://hackernoon.com/threaded-asynchronous-magic-and-how-to-wield-it-bba9ed602c32
