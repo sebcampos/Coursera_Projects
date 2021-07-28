@@ -1,7 +1,7 @@
 # Decoys
 ## Introduction to decoys
 "All warefare is based on deception"
-- Sun Tzu
+-Sun Tzu
 
 * Cyberattackers commonly use deceptive tactics to hide their activities. Active defenders can employ deception as well:
     - Honeypots: decoy systems and data
@@ -94,4 +94,10 @@
     - Identification of malicious traffic
     - Detection of unusual traffic encapsulation (RDP over TCP, etc)
     - Monitoring for anomalous traffic patterns
+
+## System activity monitoring for active defense
+* The endpoint is a common target of cyber attacks. Active defense use cases for system activity monitoring include:
+    - Detection of unusual activity on user accounts
+    - Identification of anomalous processes on the system
+    - Monitoring for attempts to evade system defenses
 
