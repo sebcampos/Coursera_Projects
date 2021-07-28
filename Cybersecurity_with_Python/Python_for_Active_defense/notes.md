@@ -101,3 +101,9 @@
     - Identification of anomalous processes on the system
     - Monitoring for attempts to evade system defenses
 
+## Behavioral analytics for active defense
+* Behavioral analytics supports active defense by:
+    - Identifying abnormalities in system resource usage
+    - Detecting unusual behavior by users and applications
+
+
