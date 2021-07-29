@@ -87,3 +87,71 @@
     - These alternatice protocols may be overlooked by those trying to identify command-and-control and adata exfiltration traffic
 
 
+## Introduction to Non-Application Layer protocol
+* Most data transfers are performed using application-layer protocols:
+    - HTTP
+    - SMTP
+    - Etc.
+
+
+* Other, non-application protocols are also able to carry data
+    - Payload
+    - Various fields
+
+* Non-Application protocols can be a more sbutle channel for data transfer
+
+# Python for Impact
+## MITRE Attack impact
+* Not all attacks aredesigend to gain access to sensitive data on a system
+
+* Some are designed to cause damage or make the system less usable:
+    - Ransomware
+    - Denial of service
+    - Etc.
+
+* MITRE ATTACK uses impact to describe these stages of an attack:
+    - Anything that harms a systems operations
+
+* An attacker can cause damage to a system and impair its operations in several different ways:
+    - Account Access Removal
+    - Data Destruction
+    - Data Encrypted for Impact
+    - Data Manipulation
+    - Defacement
+    - Disk Wipe
+    - Endpoint Denial-of-Service
+    - Firmware Corruption
+    - Inhibit System recovery
+    - Network Denial-Of-Service
+    - Resource Hijacking
+    - Service Stop
+    - System shutdown/reboot
+
+* This course demonstrates two ways in which python can be used to vause damage to a target system or inconvenience its users:
+    1. Data Encrypted for Impact
+    2. Account Access Removal
+
+## Introduction to Data Encrypted for Impact
+* Data is a valuable commodity, and many organizations store data on digital systems
+    - Removing Access to this data harms the organization
+    - Potential to monetize the attack by restoring access
+
+* Data Encryption is a non-permanent way of denying access to valuable data
+    - The user cannot access the encrypted data
+    - The encryption key restores access to the data
+
+* Ransomware uses data encryption for impact and to monetize data access
+
+## Introduction to account access removal
+* Access to user accounts is essential to many employees ability to do their jobs
+    = Access to files , programs, etc
+
+* Removing This access causes damage to the business
+    - Lost productivity
+    - Expensive remediation
+    - Potential data loss
+
+* Account access can be removed in multiple different ways
+    - account deletion
+    - Password changes
+
