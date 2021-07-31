@@ -171,3 +171,63 @@ communicate data to routers representing the edges of an autonomous system
 They are ranges of IPs set aside for use by anyone that cannot be routed to
 - Core routers cannot access them
 - They can be used by anyone internally
+
+## Introduction to the Transport and application Layers
+
+### The Transport Layer
+- multiplexing and demultiplexing is handled by the transport layer through ports
+- a port is a 16 bit number thats used to direct traffic to specific services running on a networked computer
+- 10.10.10:80 is a socket address / socket number. the :80 denotes that we are 'addressing' port 80 on this socket
+- Ethernet
+    - IP datagram
+        - TCP segment
+            * Source port - Destination field
+            * sequence number is a 32 bit number thats used to keep track of where in a sequence of TCP segments this one is expected to be (1)
+            * acknowlegement number is the number of the next expected segment (2)
+            * Data offset field is a 4-bit number that communicates how long the TCP header for this segment is
+            * 6 bits reserved for the Control flags
+            * The TCP window specifies the range of sequence numbers that might be sent before an acknowledgement is required
+            * TCP checksum Operates just like the checksum fields at the IP and ethernet level - calculates lost or corrupted data
+            * Urgent Pointer Field used in conjunction with the one of the TCP control flags to point out particular segments that might be more important than others
+            * Options is sometimes used for more complicated flow control protocols
+            * Padding just added 0's to ensure that the data payload section begins at the expected location
+
+### TCP Control Flags and the Three-way Handshake
+- Control Flags
+    * URG short for URGENT a value of 1 here indicates that the segment is considered urgent and that the urgent pointer field has more data about this
+    * ACK (acknowledged) A value of one in this field means that the acknowledgement number field should be examined
+    * PSH (push) The transmitting device wants the recieveing device to push currently-buffered data to the application on the receiving end as soon as possible
+    * RST (reset) One of the sides in a TCP connection hasnt been able to properly recover from a series of missing or malformed segments
+    * SYN (synchronize) used when first establishing TCP connection and makes sure the receiving end knows to exmine the sequence number field
+    * FIN (finish) when this flag is set to 1 it means the transmitting computer doesnt have any more data to send and the connection can be closed
+
+- Three way handshake
+    - Computer 1 -> SYN -> Compupter 2
+    - Computer 1 <- SYN/ACK <- Compupter 2
+    - Computer 1 -> ACK -> Compupter 2
+    - now computers can start a TCP connection setting segments back and forth
+
+- A handshake is a way for 2 devices to ensure that they are speaking the same protocol and will be able to understand each other
+
+- Four way handshake (closing connection)
+    - Computer 1 <- FIN <- Compupter 2
+    - Computer 1 -> ACK -> Compupter 2
+    - Computer 1 -> FIN -> Compupter 2
+    - Computer 1 <- ACK <- Compupter 2
+
+
+### Socket States
+- Socket is the instantiation of an end-point in a potential TCP connection
+- Instantiation is the actual implementation of something defined elsewhere
+- LISTEN: A TCP socket is ready and listening for incoming connections (serverside only)
+- SYN_SENT: A synchronization request has been sent but the connection hasnt been established yet (client side only)
+- SYN_RECIEVED: A socket previously in a LISTEN state has recieved a synchronization request and sent a SYN/ACK back (server side only)
+- ESTABLISHED: The TCP Connection is in working order and both sides are free to send each other data
+- FIN_WAIT: A FIN has been sent but the corresponding ACK from the other end hasnt been received yet
+- CLOSE_WAIT: The connection has been closed at the TCP layer, but that the application that opened the socket hasnt released its hold on the socket yet
+- CLOSED: THe connection has been fully terminated and that no further communication is possible
+
+## Connection-Oriented and Connectionless protocols
+
+
+
