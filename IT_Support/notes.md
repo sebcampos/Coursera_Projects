@@ -227,7 +227,15 @@ They are ranges of IPs set aside for use by anyone that cannot be routed to
 - CLOSE_WAIT: The connection has been closed at the TCP layer, but that the application that opened the socket hasnt released its hold on the socket yet
 - CLOSED: THe connection has been fully terminated and that no further communication is possible
 
-## Connection-Oriented and Connectionless protocols
+### Connection-Oriented and Connectionless protocols
+- Establishes a connection and uses this to ensure that all data has been properly transmitted
+- A good example of UDP is streaming video
 
 
+### Firewalls
+- A device that blocks traffic that meets certain criteria
+
+
+### The application layer
+- For web traffic the application layer protocol is known as HTTP
 
