@@ -239,3 +239,16 @@ They are ranges of IPs set aside for use by anyone that cannot be routed to
 ### The application layer
 - For web traffic the application layer protocol is known as HTTP
 
+
+## OSI Model
+- seven layers 
+    * Application
+    * Presentation
+    * Session
+    * Transport
+    * Network
+    * Data link
+    * Physical
+
+## All the layers working in Unison
+
