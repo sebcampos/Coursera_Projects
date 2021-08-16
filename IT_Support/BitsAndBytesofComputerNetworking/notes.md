@@ -250,5 +250,94 @@ They are ranges of IPs set aside for use by anyone that cannot be routed to
     * Data link
     * Physical
 
-## All the layers working in Unison
+## Indroduction to Network Services
+### Name Resolution
+
+- DNS Domain Name System:
+    * A global and highly distributed network service that resolves strings of letters into IP addresses for you
+    * converting a name into a ip address is known as name resolution ie www.website.com -> DNS -> 123.645.432.65
+
+- There are five primary types of DNS servers:
+    1. Caching name servers
+    2. Recursive name servers
+    3. Root name servers
+    4. TLD name servers
+    5. Authoritative name servers 
+
+- Caching and recursive name servers purpose is to store known domain name lookups for a certain amount of time
+
+- Recursive Name servers perform Full DNS resolution requests
+
+- TTL Time to live
+    * A value in seconds that can be configured by the owner of a domain name for how long a name server is allowed to cache an entry before it should discard it and perform a full resolution look up again.
+
+- Anycast
+    * A technique that is used to route traffic to different destinations depending on factors like location, congestion, or link health
+
+- TLD = Top level domain the ".com" portion of a domain name
+
+
+- DNS is an application layer that uses UDP for the transport layer instead of TCP
+    * This is becuase UDP is `connectionless` , that is to say no connection needs to be made to send the datagrams. Overall less traffic will occur with these look ups even  so this can still generate a lot of traffic
+
+    * Computer -> UDP -> Caching/recursive name server 
+    * Caching/recursive name server -> UDP -> 13 rootservers
+    * Caching/recursive name server <- UDP <- 13 rootservers
+    * Caching/recursive name server -> UDP -> TLD name servers
+    * Caching/recursive name server <- UDP <- TLD name servers
+    * Caching/recursive name server -> UDP -> Thousands of name servers
+    * Caching/recursive name server <- UDP <- Thousands of name servers
+
+    * total of 8 packets. No connections made to be opened and closed ie TCP = computer SYN/ACK -> Caching/recursive being sent back and forth with every other server in process multiplce handshakes would occur
+
+
+- Resource and Record Types
+    * Most common type of record is an `A Record` and it is used to point a certain domain name at a certain IPv4 IP address
+    * a list of IPs are held [IP1, IP2, IP3, IP4], when queried for a DNS they will attempt to connect with IP1 if that fails they will move to IP2, if that succeds the list will change to [IP2, IP3, IP4, IP1]
+    * another common record is the `quad A (AAAA)` record which points to an IPv6 address
+    * `CNAME` record redirects traffic from one domain to another. Resolves to a different network microsoft.com == www.mircrosoft.com both will take you to www.microsoft.com
+    * `SRV` record returns specifics of many different service types.
+    * `txt` record type was written for humans to read arbitrary specifics of the network. But it is also used to communicate data to other computers/network services such as additional service configurations
+
+
+- Anatomy of a Domain name 
+    * www -> subdomain/hostname
+    * google 
+    * com -> TLD Top level domain name (.com .net .edu .de .cn etc)
+    * www.something.com -> Fully Qualified Domain Name or (FQDN). When you combine all of these parts together
+
+
+- DNS Zones
+    * Hierchical concept
+    * Responsible for the zone specific to its TLD
+    * Allow for easier control over multiple levels of a domain
+
+- Zone Files are Simple configuration files that declare all resource records for a particular Zone
+
+- Start of Authority (SOA) Delcares the zone, and the name of the name server that is authoritative for it
+
+- NS records indicate other name servers that might also be responsible for this zone
+
+- Reverse Look up zone Files: These let DNS resolvers ask for an IP and get the FQDN associated with it returned
+
+- PTR Poinrter resource record Resolves an IP to a name
+
+## Overview of DHCP
+* IP address
+* Subnet mask
+* Gateway
+* Name server
+
+- DHCP Dynamic Host Configuration Protocol is an Application Layer protocol that automates the configuration process of hosts on a network
+
+- DHCP can configure a range of IP addresses thats set aside for client devices. This ensures that any of these devices can obtain an IP address when they need one but also solves the problem of having to maintain a list of every node on the network and its corresponding IP
+
+- Automatic Allocation is when a range of IP Addresses is set aside for assignment purposes
+
+- Fixed Allocation Requires a manually specified list of MAC addresses and their corresponding IP addresses
+
+- NTP servers, Network Time Protocol, used to keep all compiters on a network synchronized in time
+
+- DHCP discovery
+    * The process by which a client configured to use DHCP attempts to get network configuration information
 
