@@ -25,4 +25,54 @@ Computer / Algorythm is given data with no real identifiers. It attempts to sort
 For example it might notice that there are two clusters of data points on each side of the data set ie some towered x01 and y01 and some other clustered towered xN and yN
 with little or none in between. It would then split these 2 'clusters'
 
+### The cocktail party problem
+Input = Audio of two people or entities (or more) talking
+output = two (or more) seperate audio clips for each entity
 
+- Cocktail party problem algorythm
+    * [W, s, v] = svd((repmat(sum(x. *x, 1), size(x,1), 1).*x)*x'); 
+
+### Model Representation
+Supervised Learning
+- Given the 'right answer' for each example in the data
+
+Regression Problem
+- Predict real-valued output
+
+datasets are known as Training sets in ML
+
+### Notation
+- m = Number of Training examples
+- x = "input" variable features
+- y = "output" variable/ "target" variable
+- (x,y) = a single training example also a row
+- (x^i, y^i) = the ith training example whatever row i may be (x^2, y^2) = second row in data)
+
+
+
+if there are 47 rows in the data then m = 47
+
+
+Training set --> learning algorithm --> h (hypothesis)
+
+def h(x): return y ---> h is a function that maps from x's to y's
+
+
+in this course we will represent h as: 
+hø(x) = ø0 ---> this is a univariate linear regression (one variable)
+
+### The cost function
+the ø symbol will represent the paramaters of out function
+
+our cost function will be a linear function
+         ø      ø
+hø(x) =      +     x       
+          0      1
+
+
+### linear regression
+
+minimize
+ø0 ø1
+
+![Drag Racing](images/Cost_Function_linear_regression.png)
