@@ -1,6 +1,6 @@
 # Cost Functions
 
-![CostFunction](cost_function.PNG)
+![CostFunction](images/cost_function.PNG)
 
 ## Source
 https://towardsdatascience.com/machine-leaning-cost-function-and-gradient-descend-75821535b2ef
