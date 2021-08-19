@@ -75,4 +75,5 @@ hø(x) =      +     x
 minimize
 ø0 ø1
 
-![Drag Racing](images/Cost_Function_linear_regression.png)
+![Cost function](images/Cost_Function_linear_regression.png)
+

@@ -341,3 +341,33 @@ They are ranges of IPs set aside for use by anyone that cannot be routed to
 - DHCP discovery
     * The process by which a client configured to use DHCP attempts to get network configuration information
 
+## Basics of NAT
+- NETWORK 
+- ADDRESS 
+- TRANSLATION
+
+A technology that allows a gateway, usually a router or firewall, to rewrite the source IP of an outgoing IP datagram while retaining the original IP in order to rewrite it into the response 
+
+computer1 --> datagram containing computer 1 IP --> router overwrites computer 1 IP with its own IP sends packet to computer 2
+
+computer2 --> response datagram to recieved IP of/to router --> router identifies this datagram as the one it `masked` and returns it to --> computer 1
+
+This process is known as IP masquerading:
+- Security is better this way
+
+Port Preservation:
+- A technique where the source port chosen by a client is the same port used by the router
+
+Port Forwarding:
+- A technique where specific destination ports can be configured to always be delivered to specific nodes
+
+The 5 RIRs (Regional Internet Registries)
+
+1. AFRINIC servers the continent of Africa
+2. ARIN serves the United States, Canada, and parts of the Caribbean
+3. APNIC serves most of Asia, Australia, New Zealand, and Pacific island nations
+4. LACNIC covers Central and South America and any parts of the Caribbean not covers by ARIN
+5. RIPE serves Europe, Russia, the Middle East and portions of central Asia
+
+## Virtual Private Networks
+

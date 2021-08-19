@@ -1,0 +1,5 @@
+khan acadamy
+
+1. Linear Algebra
+2. Statistics and probability
+3. Multivariable Calculus
