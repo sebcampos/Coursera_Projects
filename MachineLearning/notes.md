@@ -87,3 +87,5 @@ minimize
 - Not just used with the cost function but in many places for machine learning
 
 ![Gradient Descent](images/Gradientdescent.png)
+
+
