@@ -77,3 +77,13 @@ minimize
 
 ![Cost function](images/Cost_Function_linear_regression.png)
 
+
+
+### Cost Function
+![Intuition II](images/CostFunction_Coursera1.png)
+
+### Gradient Descent
+- Algorithm used everywhere to minimize the cost function J
+- Not just used with the cost function but in many places for machine learning
+
+![Gradient Descent](images/Gradientdescent.png)

@@ -370,4 +370,35 @@ The 5 RIRs (Regional Internet Registries)
 5. RIPE serves Europe, Russia, the Middle East and portions of central Asia
 
 ## Virtual Private Networks
+A technology that allows for the extension of a private or local network to hosts that might not be on that local network
+- Tunneling protocol
+
+remote clinet --> Internet --> Router --> VPN server 
+
+Two Factor Authentication
+A technique where more than just a username and password are required to authenticate
+
+Tunnels are encrypted
+
+## Proxy Services
+A server that acts on behalf of a client in order to access another service
+
+web client -> Web proxies ->  webserver
+              caches data as well
+
+web proxy at work:
+
+web client twitter request --> web proxy inspects and denis request --x--> web server
+
+Reverse Proxy
+A service that might appear to be a single server to external clients, but actually represents many servers living behind it
+
+                                      -------> server
+                                    /
+clients ----> reverse proxy server ----------> server
+                                    \
+                                      -------> server
+
+can help with encrytion and decryption as these tasks are cpu intensive so they can be designated to a single server
+Proxys act as an intermdiator between a clinet and another server
 
