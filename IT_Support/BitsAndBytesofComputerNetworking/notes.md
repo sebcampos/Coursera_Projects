@@ -393,9 +393,10 @@ web client twitter request --> web proxy inspects and denis request --x--> web s
 Reverse Proxy
 A service that might appear to be a single server to external clients, but actually represents many servers living behind it
 
+
                                       -------> server
                                     /
-clients ----> reverse proxy server ----------> server
+    clients ----> reverse proxy server ----------> server
                                     \
                                       -------> server
 
