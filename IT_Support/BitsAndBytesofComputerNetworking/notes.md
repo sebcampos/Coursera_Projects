@@ -403,3 +403,133 @@ A service that might appear to be a single server to external clients, but actua
 can help with encrytion and decryption as these tasks are cpu intensive so they can be designated to a single server
 Proxys act as an intermdiator between a clinet and another server
 
+## Dial up modems and point to point protocols
+- USENET
+
+A dial-up connection uses POTS for data transfer, and gets its name because the connection is established by actually dialing a phone number
+another name for POTS is Public switched telephone networks
+Modem = Modulater/Demodulator
+
+- Baud rate
+        A measurement of how many bits can be passed across a phone line in a second
+
+## Broadband
+Any connectivity technology that isnt dial-up internet
+- Faster than any dial up connection
+- long lasting connections that dont need to be established with each use
+
+- T-carrier technologies
+        Originally invented by AT&T in order to transmit mulitple phone calls over a single link
+
+## T-Carrier technologies
+- With the T1 specification, AT&T invented a way to carry up to 24 simultaneous phone calls across a single piece of twisted pair copper
+-  a single T1 line capable of transmitting data at 1.544 megabits per second
+- T1 has come to mean any twisted pair copper connection capable of speeds of 1.544 megabits per second, even if it doesn't strictly follow the original Transmission System 1 specification
+
+## Digital Subscriber Lines
+DSL
+- allowed for voice transfer and data transfer to occur on the same line
+
+- ADSL
+        Asymetric Digital Subscriber Line
+        These connections feature different speeds for faster downloads and slower uploads
+        great for home users as they do not upload so much data but need to download alot of data from servers
+
+- SDSL
+        Symmetric Digital Subscriber Line
+        These connctions have the same upload speed and download speed
+        These Subscriber lines are used mainly by Businesses. Over the years this has become common for both
+        home users and businesses
+
+- HDSL
+        High bit-rate Digital Subscribers Lines
+        above 1.544 megabits per seconds
+
+
+## Cable Broadband
+- capable of delivering tv broadcast data as well as internet data
+- Shared bandwidth technology
+- Cable Modem
+        The device that sits at the edge of a consumers network an connects it to the cable modem termination system or CMTS
+- CMTS
+        Cable modem termination system
+        connects lots of different cable connections to an ISPs core network
+
+## Fiber connections
+- use light for data transmision (not electrical)
+- can travel farther than copper
+
+- FFTX
+        Fiber to the `X`
+        the `X` can be anything
+
+- FFTN
+        Fiber to the neighborhood
+
+- FTTB
+        Fiber to the Building or Fiber to the Basement
+        Individual building
+
+- FTTH
+        Fiber to the Home
+        goes to each individual houses
+
+- FTTP
+
+        Fiber to the premisis
+        includes FTTB and FTTH
+
+
+instead of a Modem, the demarcation point for Fiber Technologies is known as:
+
+- Optical Network Terminator or ONT
+
+ONT converts data from protocls the fiber network can understand to those that the more traditional twiseted pair copper networks can understand
+
+
+## Wide Area Network Technologies
+WAN Technologies 
+
+- Acts like a single network but spans across multiple physical locations
+
+## Point to Point VPNs
+establishes a VPN tunnel between two sites. 
+alsow known as site to site VPNs
+
+## Wireless Networking technologies
+- The most common specifications for how wireless networking devices should communicate are defined by the IEEE 802.11 standards. This set of specifications also called the 802.11 family make up the set of technologies we call WiFi
+
+- Frequency Band
+        A certain section of the radio spectrum thats been argeed upon to be used for certain communications ie FM readio transmitions opperate bewteen 88 and 108 megaherts or the FM brodcast band
+
+WiFi also runs on radio wave bands defined by the 802.11 specifiactions
+
+Some of the most common 802.11 bands include (older -> newer):
+- 802.11b
+- 802.11a
+- 802.11g
+- 802.11n
+- 802.11ac
+
+802.11 = defineing operations on both the physicl and data link layers
+
+- Frame Control Field
+
+        Is 16 bits long and contains a number of subfields that are used to describe how the frame itself should be processed
+
+- Duration field
+
+        Specifies how long the total frame is, so the reciever knows how long it should expect to have to listen to this transmission
+
+- Wireless access point
+
+        A device that bridges the wireless and wired portions of a network
+
+
+
+## Wireless network configurations
+- ad-hoc networks (all nodes speak directly to each other)
+- Wireless LANS or WLANS (one or more access points act as a bridge between a wireless and a wired network)
+- Mesh Networks (hybrid of the 2)
+
+In an adhoc network there isnt really any supporting network infrastructure
