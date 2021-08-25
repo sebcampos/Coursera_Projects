@@ -89,3 +89,31 @@ minimize
 ![Gradient Descent](images/Gradientdescent.png)
 
 
+### Gradient Descent Algorithm
+![gradient_descent algorithm](images/gradient_descent.png)
+
+- repeatedly update parameter theta j until convergence
+- := operator is equal to an assignment operator ie a:= b assigns the value of a to b. Where a = b is making an assertion that they are equal. 
+- a:= a +1 --> yes! 
+- a = a +1 --> no
+- α sign is equal to the learning rate. if Alpha is very small then the steps we take to optimize will be small steps. If alpha is large then we are taking large steps to optimize.
+- This whole algorithm is used to update theta zero and theta 1
+- gradient descent must always be a simultaneous update 
+
+### Linear Regression with one variable
+Examples of incorrect usage of alpha
+
+![when_alpha_incorrect](images/gradient_descent_alpha.png)
+
+the steps of gradient decsent will automatically decrease the steps as it moves naturally due to the nature of the algorithm
+
+
+because linear regression will always be a convex function it will have a bow shape. and because of this gradient decent will only have one `global minimum' / `global optimim` (pitfall)
+
+
+`batch gradient descent`:
+- each step of gradient descent uses all the training examples
+
+
+
+
