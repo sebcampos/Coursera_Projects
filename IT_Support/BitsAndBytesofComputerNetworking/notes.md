@@ -533,3 +533,41 @@ Some of the most common 802.11 bands include (older -> newer):
 - Mesh Networks (hybrid of the 2)
 
 In an adhoc network there isnt really any supporting network infrastructure
+
+- A wireless LAN consists of one or more access points, which act as bridges between the wireless and wired networks
+
+## Wireless channels
+
+## Wireless Security
+- WEP
+        Wired Equivalent Privacy
+        An Encryption Technology that provides a very low level of privacy
+        very weak encryption algorithm
+        only uses 40 bits for encryption bits keys
+
+- WPA
+        Wifi Protected Access
+        uses 128 bit key
+
+- WPA2
+
+        most commonly used encryption algorithm
+        256 bit key
+
+- MAC Filtering
+
+        configure your access points to only allow for connections from a specific set of MAC
+        Addresses belonging to devices you trust
+
+## Cellular Networking
+- Mobile networking
+
+## Mobil Devices
+- Cellular networks
+- Wifi
+- Bluetooth
+- Internet of Things (IoT) network protocols
+
+
+
+
