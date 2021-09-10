@@ -570,4 +570,67 @@ In an adhoc network there isnt really any supporting network infrastructure
 
 
 
+# Introduction to Troubleshooting and Future of networking
+Error-detection
+- ability for a protocol or program to determine that something went wrong
 
+Error-recovery
+- The ability for a protocol or a program to attempt to fix 
+
+
+
+## Ping Internet conrtol message protocol
+Ping lets you send a speacial type of ICMP message called an echo request
+
+If the destination is up and running and able to communicate on the network it ll send back an ICMP Echo Reply message type
+
+## Trace Route
+Uses the TTL filed 
+to trace the route of a packet sent to a destination `traceroute`
+
+## Testing Port connectivity
+- netcat or nc args = host and a port `nc -z -v google.com 80`
+
+- Test-NetConnection google.com
+
+## Name resolution Tools
+- nslookup `nslookup google.com`
+
+## Public DNS Servers
+An ISP almost always gives you access to a recursive name server as part of the sercive it provides
+
+Public DNS Servers
+- Name serves specifically set up so that anyone can use them, for free
+- Always make sure the name servers are run by a reputable company and try to use the name servers provided by your ISP outside of troubleshooting scenarios
+
+## DNS Registration and Expiration
+Registrar
+- An organization responsible for assigning individual domain names to other organizations or individuals
+
+
+## Host files
+Host files
+- A flat file that contains on each line a network address followed by the host name it can be referred to as
+
+
+## The Cloud
+Cloud Computing
+- A tehcnological approach where computing resources are provisioned in a shareable way, so that lots of users get what they need, when they need it
+
+Hardware virtualization
+- A single physical machine called a host could run many indivicual virtual instances called guests
+
+Public Cloud
+- A large cluster of machines run by another company
+
+Private Cloud
+- Used by a single large company/coorperation generally physically hosted on its own premises
+
+Hybrid Cloud
+- A term used to describe situations where companies might run things like their most sensitive proprietary technologies on a private cloud while entrusting their less-sensitive servers to a public cloud
+
+X as a service
+
+Infrastructure as a service (IaaS)
+- PaaS s    
+- SaaS
